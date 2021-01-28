@@ -11,3 +11,13 @@
 
 Например: 20 м*5000 м*25 кг*5 см = 12500 т.
 '''
+
+class Road:
+    __length = 10
+    __width = 5
+    def calculation(self):
+        weight = 5000
+        print(f'{int(Road.__length * Road.__width * weight)} T.')
+
+a = Road()
+a.calculation()
