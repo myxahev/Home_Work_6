@@ -35,7 +35,7 @@ class TownCar(Car):
         if self.speed > 60:
             return f'\nExcess of speed, your speed {self.speed}'
         else:
-            super().show_speed()
+            return super().show_speed()
 
 class SportCar(Car):
     pass
@@ -43,7 +43,7 @@ class WorkCar(Car):
     def show_speed(self):
 
         if self.speed < 40:
-            super().show_speed()
+            return super().show_speed()
         else:
             return f'\nExcess of speed, your speed {self.speed}'
 
