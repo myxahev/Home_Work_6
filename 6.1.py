@@ -12,3 +12,27 @@
 Задачу можно усложнить, реализовав проверку порядка режимов.
 При его нарушении выводить соответствующее сообщение и завершать скрипт.
 '''
+
+from time import sleep
+
+
+class TrafficLight:
+    def __init__(self):
+        self.color = ['Red', 'Yellow', 'Green']
+
+    def running(self):
+        i = 0
+        while i != 3:
+            print(self.color[i])
+            if i == 0:
+                sleep(7)
+            elif i == 1:
+                sleep(2)
+            elif i == 2:
+                sleep(5)
+                print('Go')
+            i += 1
+
+
+t = TrafficLight()
+t.running()
