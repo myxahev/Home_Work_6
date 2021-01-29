@@ -17,12 +17,13 @@ from time import sleep
 
 
 class TrafficLight:
-    __color = ['Red', 'Yellow', 'Green']
+    def __init__(self):
+        self.color = ['Red', 'Yellow', 'Green']
 
     def running(self):
         i = 0
         while i != 3:
-            print(TrafficLight.__color[i])
+            print(self.color[i])
             if i == 0:
                 sleep(7)
             elif i == 1:
